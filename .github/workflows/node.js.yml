@@ -34,10 +34,5 @@
                 with:
                   mongodb-version: ${{ matrix.mongodb-version }}
 
-              - run: mkdir data
-              - run: mkdir data/db
-              - run: mongod --dbpath=./data/db
-
               - run: npm run dev
-
               - run: npm test
