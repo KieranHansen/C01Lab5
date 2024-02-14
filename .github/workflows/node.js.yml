@@ -34,5 +34,4 @@
                 with:
                   mongodb-version: ${{ matrix.mongodb-version }}
 
-              - run: npm run dev
               - run: npm test
