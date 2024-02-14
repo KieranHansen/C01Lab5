@@ -30,9 +30,9 @@
               - run: npm i
 
               - name: Start MongoDB
-                  uses: supercharge/mongodb-github-action@1.10.0
-                  with:
-                    mongodb-version: ${{ matrix.mongodb-version }}
+                uses: supercharge/mongodb-github-action@1.10.0
+                with:
+                  mongodb-version: ${{ matrix.mongodb-version }}
 
               - run: mkdir data
               - run: mkdir data/db
